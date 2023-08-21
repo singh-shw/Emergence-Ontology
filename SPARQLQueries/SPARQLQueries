@@ -1,0 +1,92 @@
+For Template:
+SELECT ?def
+WHERE {{
+    ?author rdf:type BASE:Author .
+    ?author BASE:hasName ?name .
+    ?author BASE:publishes ?paper .
+    ?paper BASE:hasDefinition ?def .
+    FILTER regex(?name, "{author_name}")
+}}
+
+List of Queries Generated:
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX BASE: <http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#>
+
+SELECT ?def
+WHERE {
+    ?author rdf:type BASE:Author .
+    ?author BASE:hasName ?name .
+    ?author BASE:publishes ?paper .
+    ?paper BASE:hasDefinition ?def .
+    FILTER regex(?name, "Jochen Fromm")
+}
+
+
+-----
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX BASE: <http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#>
+
+SELECT ?def
+WHERE {
+    ?author rdf:type BASE:Author .
+    ?author BASE:hasName ?name .
+    ?author BASE:publishes ?paper .
+    ?paper BASE:hasDefinition ?def .
+    FILTER regex(?name, "G.H.Lewes")
+}
+
+
+-----
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX BASE: <http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#>
+
+SELECT ?def
+WHERE {
+    ?author rdf:type BASE:Author .
+    ?author BASE:hasName ?name .
+    ?author BASE:publishes ?paper .
+    ?paper BASE:hasDefinition ?def .
+    FILTER regex(?name, "J. Goldstein")
+}
+
+
+-----
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX BASE: <http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#>
+
+SELECT ?def
+WHERE {
+    ?author rdf:type BASE:Author .
+    ?author BASE:hasName ?name .
+    ?author BASE:publishes ?paper .
+    ?paper BASE:hasDefinition ?def .
+    FILTER regex(?name, "C. Rouff")
+}
+
+
+-----
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX BASE: <http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#>
+
+SELECT ?def
+WHERE {
+    ?author rdf:type BASE:Author .
+    ?author BASE:hasName ?name .
+    ?author BASE:publishes ?paper .
+    ?paper BASE:hasDefinition ?def .
+    FILTER regex(?name, "D. Fisher")
+}
+
+
+-----
+
