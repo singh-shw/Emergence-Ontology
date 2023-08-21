@@ -1,1 +1,12 @@
-# Enter the templates of competency questions
+# Following templates of competency questions are used to evaluate Emergence Ontology
+
+1. Are there any emergence definitions by [Author]?
+2. Which research works published by [Class:Author]?
+3. What is the definition provided by [Author]?
+4. Does [Author] uses [DataProperty:EmergenceFeature] as one of the emergence features?
+5. What all emergence features are used by [Author]?
+6. What are the common emergence features between definitions provided by [Author1] and [Author2]?
+7. What are the common emergence features between [Class:EmeregntBehavior1] and [Class:EmergentBehavior2]?
+8. What classifications are provided by [Author]?
+9. What is an example of [Class:EmeregntBehavior]?
+10. What are the features of [Class:EmergentBehavior]?
