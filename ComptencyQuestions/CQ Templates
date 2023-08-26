@@ -1,12 +1,31 @@
-# Following templates of competency questions are used to evaluate Emergence Ontology
+# The following templates of competency questions are used to evaluate Emergence Ontology
 
-1. Are there any emergence definitions by [Author]?
-2. Which research works published by [Class:Author]?
-3. What is the definition provided by [Author]?
-4. Does [Author] uses [DataProperty:EmergenceFeature] as one of the emergence features?
-5. What all emergence features are used by [Author]?
-6. What are the common emergence features between definitions provided by [Author1] and [Author2]?
-7. What are the common emergence features between [Class:EmeregntBehavior1] and [Class:EmergentBehavior2]?
-8. What classifications are provided by [Author]?
-9. What is an example of [Class:EmeregntBehavior]?
-10. What are the features of [Class:EmergentBehavior]?
+1. Does [Author_Name] have any emergence definitions?
+   - ASK query to check existence.
+
+2. What definition has been provided by [Author_Name]?
+   - SELECT to fetch the specific definition.
+
+3. Which research works are associated with [Author]?
+   - SELECT to fetch the titles of the works.
+
+4. Is [DataProperty:EmergenceFeature] an emergence feature used by [Author]?
+   - ASK to check for the usage of a specific feature.
+
+5. List the emergence features associated with [Author_Name]'s research.
+   - SELECT to retrieve all features.
+
+6. What classifications or types of emergence has [Author_Name] defined?
+   - SELECT to retrieve the classifications.
+
+7. What specific features are associated with [Class:EmergentBehavior]?
+   - SELECT to get the properties/features.
+
+8. What is an example of [Class:EmergentBehavior]?
+   - SELECT to provide specific examples.
+
+9. Which emergence features are common between [Author_Name1] and [Author_Name2]'s definitions?
+   - SELECT to find common features based on Author's definition
+
+10. Which emergence features are common between [Class:EmergentBehavior1] and [Class:EmergentBehavior2]?
+   - SELECT to find common features based on emergence behavior type
