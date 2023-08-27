@@ -1,31 +1,105 @@
 # The following templates of competency questions are used to evaluate Emergence Ontology
 
-1. Does [Author_Name] have any emergence definitions?
-   - ASK query to check existence.
+############################### BASIC QUERIES ###############################
 
-2. What definition has been provided by [Author_Name]?
-   - SELECT to fetch the specific definition.
+1. Is [Author] an author in the ontology?
 
-3. Which research works are associated with [Author]?
-   - SELECT to fetch the titles of the works.
+  Type: ASK
+  Placeholders: <AuthorName>
 
-4. Is [DataProperty:EmergenceFeature] an emergence feature used by [Author]?
-   - ASK to check for the usage of a specific feature.
+2. Which research works are published by [Author] in the emergence domain?
 
-5. List the emergence features associated with [Author_Name]'s research.
-   - SELECT to retrieve all features.
+  Type: SELECT
+  Placeholders: <AuthorName>
 
-6. What classifications or types of emergence has [Author_Name] defined?
-   - SELECT to retrieve the classifications.
+3. Has [Author] provided any emergence definitions?
 
-7. What specific features are associated with [Class:EmergentBehavior]?
-   - SELECT to get the properties/features.
+  Type: ASK
+  Placeholders: <AuthorName>
 
-8. What is an example of [Class:EmergentBehavior]?
-   - SELECT to provide specific examples.
+4. What is the emergence definition provided by [Author]?
 
-9. Which emergence features are common between [Author_Name1] and [Author_Name2]'s definitions?
-   - SELECT to find common features based on Author's definition
+  Type: SELECT
+  Placeholders: <AuthorName>
 
-10. Which emergence features are common between [Class:EmergentBehavior1] and [Class:EmergentBehavior2]?
-   - SELECT to find common features based on emergence behavior type
+5. Does [Author] use [EmergenceFeature] in their definition?
+
+  Type: ASK
+  Placeholders: <AuthorName>, <EmergenceFeature>
+
+6. Which authors have discussed [EmergentBehavior]?
+
+  Type: SELECT
+  Placeholders: <EmergentBehavior>
+
+7. What are the features of [EmergentBehavior]?
+
+  Type: SELECT
+  Placeholders: <EmergentBehavior>
+
+8. Which authors have provided definitions for more than one emergent behavior?
+
+  Type: SELECT and Conditional
+  
+9. What classifications are provided by [Author_Name]?
+
+  Type: SELECT
+  Placeholders: <AuthorName>
+
+10. Which emergent behaviors have the feature [EmergenceFeature]?
+
+  Type: SELECT
+  Placeholders: <EmergenceFeature>
+
+############################### COMPLEX QUERIES ###############################
+
+1. What are the common emergence features between definitions provided by [Author1] and [Author2]?
+
+  Type: SELECT
+  Placeholders: <Author1>, <Author2>
+
+2. What are the common emergence features between [EmergentBehavior1] and [EmergentBehavior2]?
+
+  Type: SELECT
+  Placeholders: <EmergentBehavior1>, <EmergentBehavior2>
+
+3. Which authors have discussed both [EmergentBehavior1] and [EmergentBehavior2]?
+
+  Type: SELECT
+  Placeholders: <EmergentBehavior1>, <EmergentBehavior2>
+
+4. For which emergent behaviors have [Author] used [EmergenceFeature] to define them?
+
+  Type: SELECT
+  Placeholders: <AuthorName>, <EmergenceFeature>
+
+5. What are all the emergence features used by [Author]?
+
+  Type: SELECT
+  Placeholders: <AuthorName>
+
+6. Which authors have common emergence features in their definitions?
+
+  Type: SELECT
+
+7. Which emergent behaviors are most frequently defined by the authors?
+
+  Type: SELECT
+
+8. Which emergence features are the most commonly used across all definitions?
+
+  Type: SELECT
+
+9. Which emergent behaviors have more than [X] features associated with them?
+
+  Type: SELECT
+  Placeholders: <X>
+
+10. Are there any authors who have defined an emergent behavior without specifying any emergence features?
+
+  Type: ASK
+
+11. For a given emergent behavior defined by [Author], which emergence features were used, and in which paper or publication was this definition cited?
+
+  Type: SELECT
+  Placeholder: <Author>
