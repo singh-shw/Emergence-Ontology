@@ -1,0 +1,10 @@
+#  What is the emergence definition provided by [Author]?
+
+SELECT ?def
+WHERE {
+    ?author rdf:type BASE:Author .
+    ?author BASE:hasName ?name .
+    FILTER regex(?name, "{author_name}", "i") .
+    ?author BASE:publishes ?paper .
+    ?paper BASE:hasDefinition ?def .
+}
