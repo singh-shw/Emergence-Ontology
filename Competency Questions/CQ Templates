@@ -1,0 +1,33 @@
+# Templates of Competency Question Templates
+
+# GENERAL VERIFICATION QUESTIONS WITHOUT PLACEHOLDERS
+I1. Which authors have provided definitions for more than one emergent behavior?
+I2. Which authors have common emergence features in their definitions?
+I3. Which type of emergent behavior is most frequently defined by the authors?
+I4. Which emergence features are the most commonly used across all definitions?
+I5. Are there any authors who have defined an emergent behavior without specifying any emergence features?
+I6. Which authors have changed their stance on a particular emergent feature over time?
+I7. Which emergent behavior has been consistently defined using a particular feature by multiple authors?
+
+# BASIC QUERIES WITH PLACEHOLDERS
+II1. Is [Author] an author in the ontology?
+II2. Which research works are published by [Author] in the emergence domain?
+II3. Has [Author] provided any emergence definitions?
+II4. What is the emergence definition provided by [Author]?
+II5. Does [Author] use [EmergenceFeature] in their definition?
+II6. Which authors have discussed [EmergentBehavior]?
+II7. What are the emergence features for [EmergentBehavior]?
+II8. What classifications are provided by [Author_Name]?
+II9. Which emergent behaviors have the feature [EmergenceFeature]?
+
+# COMPLEX QUERIES WITH PLACEHOLDERS
+III1. What are the common emergence features between definitions provided by [Author1] and [Author2]?
+III2. What are the common emergence features between [EmergentBehavior1] and [EmergentBehavior2]?
+III3. Which authors have discussed both [EmergentBehavior1] and [EmergentBehavior2]?
+III4. For which emergent behaviors have [Author] used [EmergenceFeature] to define them?
+III5. What are all the emergence features used by [Author]?
+III6. Which emergent behaviors have more than [X] features associated with them?
+III7. For a given emergent behavior defined by [Author], which emergence features were used, and in which paper or publication was this definition cited?
+III8. Determine the evolution of an author's views on a specific emergent behavior over time:
+
+
