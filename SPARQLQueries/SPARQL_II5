@@ -1,0 +1,11 @@
+# Does [Author] use [EmergenceFeature] in their definition?
+
+ASK {
+   ?author rdf:type BASE:Author .
+    ?author BASE:hasName ?name .
+    FILTER regex(?name, "{author_name}", "i") .
+    ?author BASE:defines ?behavior .
+    ?prop rdfs:subPropertyOf {subPropertyOf DataProperty:EmergentFeature} .
+    ?behavior ?prop ?value .
+    FILTER(?value = true) .
+}
