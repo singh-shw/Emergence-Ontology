@@ -1,0 +1,18 @@
+# What are the common emergence features between [EmergentBehavior1] and [EmergentBehavior2]?
+
+SELECT DISTINCT ?commonfeature
+WHERE {
+	?class1 rdf:type owl:Class .
+	?class2 rdf:type owl:Class .
+	?class1 rdfs:subClassOf BASE:EmergentBehavior .
+	?class2 rdfs:subClassOf BASE:EmergentBehavior .
+	?class1 owl:equivalentClass {Class1:subClassOf(EmergentBehavior)} .
+	?class2 owl:equivalentClass {Class2:subClassOf(EmergentBehavior)} .
+	?prop1 rdfs:subPropertyOf BASE:hasEmergentFeature .
+	?commonfeature rdfs:subPropertyOf BASE:hasEmergentFeature .
+	?x rdf:type ?class1 .
+	?x ?prop1 ?value1 .
+	?y rdf:type ?class2 .
+	?y ?commonfeature ?value2 .
+	FILTER (?prop1 = ?commonfeature)
+}
