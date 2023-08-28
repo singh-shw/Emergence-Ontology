@@ -1,0 +1,10 @@
+# What are the emergence features for [EmergentBehavior]?
+
+SELECT DISTINCT ?feature
+WHERE {
+    ?behavior rdf:type BASE:EmergentBehavior .
+    ?behavior owl:equivalentClass {Class:subClassOf(EmergentBehavior)} .
+    ?feature rdfs:subPropertyOf BASE:hasEmergentFeature .
+    ?behavior ?feature ?featureValue .
+    FILTER(?featureValue = true) .
+}
