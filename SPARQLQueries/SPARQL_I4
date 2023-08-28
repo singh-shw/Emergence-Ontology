@@ -1,0 +1,11 @@
+# Which emergence features are the most commonly used across all definitions?
+
+SELECT ?emergenceFeature (COUNT(DISTINCT ?emergentBehavior) as ?usageCount)
+WHERE {
+    ?emergentBehavior rdf:type BASE:EmergentBehavior .
+    ?emergenceFeature rdfs:subPropertyOf BASE:hasEmergentFeature .
+    ?emergentBehavior ?emergenceFeature ?value .
+    FILTER(?value = true) .
+}
+GROUP BY ?emergenceFeature
+ORDER BY DESC(?usageCount)
