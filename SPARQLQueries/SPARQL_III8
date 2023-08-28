@@ -1,0 +1,13 @@
+# Determine the evolution of [Author]'s views on a specific emergent behavior over time.
+
+SELECT ?paperTitle ?publishedDate ?definition
+WHERE {
+    ?author rdf:type BASE:Author .
+    ?author BASE:hasName ?authorName . 
+    FILTER regex(?authorName, "{Author}", "i") .
+    
+    ?paper BASE:writtenBy ?author ;
+           BASE:hasTitle ?paperTitle ;
+           BASE:publishedOn ?publishedDate ;
+           BASE:hasDefinition ?definition .
+} ORDER BY ?publishedDate
