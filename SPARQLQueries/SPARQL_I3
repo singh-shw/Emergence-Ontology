@@ -1,0 +1,11 @@
+# Which type of emergent behavior is most frequently defined by the authors?
+
+SELECT ?emergentBehavior (COUNT(DISTINCT ?author) as ?authorCount)
+WHERE {
+    ?author rdf:type BASE:Author .
+    ?author BASE:defines ?emergentBehaviorInstance .
+    ?emergentBehaviorInstance rdf:type ?emergentBehavior .
+    ?emergentBehavior rdfs:subClassOf BASE:EmergentBehavior .
+}
+GROUP BY ?emergentBehavior
+ORDER BY DESC(?authorCount)
