@@ -1,0 +1,12 @@
+# Are there any authors who have defined an emergent behavior without specifying any emergence features?
+
+ASK {
+    ?author rdf:type BASE:Author .
+    ?author BASE:defines ?emergentBehavior .
+    ?emergentBehavior rdf:type BASE:EmergentBehavior .
+    FILTER NOT EXISTS {
+        ?emergenceFeature rdfs:subPropertyOf BASE:hasEmergentFeature .
+        ?emergentBehavior ?emergenceFeature ?value .
+        FILTER(?value = true) .
+    }
+}
