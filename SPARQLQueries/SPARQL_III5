@@ -1,0 +1,17 @@
+# What are all the emergence features used by [Author]?
+
+SELECT DISTINCT ?emergenceFeature
+WHERE {
+    ?author rdf:type BASE:Author .
+    ?author BASE:hasName ?name .
+    FILTER regex(?name, "{author_name}", "i") .
+
+    ?author BASE:defines ?behaviorInstance .
+    ?behaviorInstance rdf:type ?emergentBehavior .
+    ?emergentBehavior rdfs:subClassOf BASE:EmergentBehavior .
+
+    ?emergenceFeature rdfs:subPropertyOf BASE:hasEmergentFeature .
+    ?behaviorInstance ?emergenceFeature ?value .
+    FILTER(?value = true) .
+}
+ORDER BY ?emergenceFeature
