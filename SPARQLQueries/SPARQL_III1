@@ -26,3 +26,4 @@ WHERE {
     
     # Filter common features
     FILTER (?feature1 = ?feature2) .
+}
