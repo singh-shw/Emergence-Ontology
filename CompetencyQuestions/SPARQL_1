@@ -1,6 +1,1 @@
-SELECT *
-        WHERE {
-            ?x rdf:type (*$\langle CE1 \rangle$*) .
-            ?y rdf:type (*$\langle CE2 \rangle$*) .
-            ?x  (*$\langle PE \rangle$*) ?y .
-        }
+
