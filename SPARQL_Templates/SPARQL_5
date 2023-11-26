@@ -1,0 +1,9 @@
+% What $<$CE$>$ has the $<$NM$>$ $<$DP$>$?
+
+SELECT *
+    WHERE {
+        ?x rdf:type (*$\langle CE \rangle$*) .
+        ?x (*$\langle DP \rangle$*) ?val .
+    }
+ORDER BY (*$\langle NM \rangle$*) (?val)
+LIMIT 1
