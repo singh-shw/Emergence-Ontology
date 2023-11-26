@@ -1,0 +1,4 @@
+ASK 
+WHERE {
+   (*$\langle CE1 \rangle$*) rdfs:subClassOf (*$\langle CE2 \rangle$*) .
+}
