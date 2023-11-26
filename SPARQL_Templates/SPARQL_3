@@ -1,0 +1,7 @@
+SELECT ?type
+        WHERE {
+            ?x rdf:type ?type .
+            ?type rdfs:subClassOf (*$\langle CE \rangle$*) .
+            FILTER(?x = (*$\langle I \rangle$*)) .
+            FILTER(?type != (*$\langle CE \rangle$*))
+        }
