@@ -1,0 +1,7 @@
+% Where do I $<$CE$>$ $<$PE$>$?
+
+SELECT ?y
+    WHERE {
+        ?x rdf:type (*$\langle CE1 \rangle$*) .
+        ?x (*$\langle PE \rangle$*) ?y .
+    }
