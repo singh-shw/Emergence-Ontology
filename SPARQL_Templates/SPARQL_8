@@ -1,0 +1,6 @@
+% Which are $<$CE$>$? 
+
+SELECT *
+WHERE {
+        ?x rdf:type (*$\langle CE1 \rangle$*).
+    }
