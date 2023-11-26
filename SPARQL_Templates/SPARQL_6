@@ -1,0 +1,13 @@
+% What is the $<$NM$>$ $<$CE1$>$ to $<$PE$>$ $<$CE2$>$? 
+
+SELECT ?ce1
+WHERE {
+  ?ce1 rdf:type (*$\langle CE1 \rangle$*) .
+  ?relation rdf:type ?relationClass ; 
+           (*$\langle PE \rangle$*) ?ce2 ;
+           (*$\langle NM \rangle$*) ?numericValue .
+  ?ce1 ?hasRelation ?relation .
+  ?ce2 rdf:type (*$\langle CE2 \rangle$*) .
+}
+ORDER BY DESC(?numericValue)
+LIMIT 1
