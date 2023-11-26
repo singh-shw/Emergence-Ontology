@@ -1,0 +1,6 @@
+SELECT (COUNT(DISTINCT ?x) AS ?count)
+WHERE {
+  ?x rdf:type (*$\langle CE \rangle$*) .
+  ?x (*$\langle DP \rangle$*) ?val .
+  FILTER(?val = true)
+}
