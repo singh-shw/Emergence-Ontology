@@ -1,0 +1,7 @@
+% When did/was $<$CE$>$ $<$PE$>$?
+
+SELECT ?y
+    WHERE {
+        ?x rdf:type (*$\langle CE \rangle$*) .
+        ?x  (*$\langle PE \rangle$*) ?y .
+    }
