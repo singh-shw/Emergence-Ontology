@@ -1,0 +1,9 @@
+% Do $<$CE1$>$ have $<$QM$>$ using $<$DP$>$?
+
+ASK {
+  ?x1 rdf:type (*$\langle CE1 \rangle$*) .
+  ?x2 rdf:type (*$\langle CE1 \rangle$*) .
+  ?x1 (*$\langle DP \rangle$*) ?y1 .
+  ?x2 (*$\langle DP \rangle$*) ?y2 .
+  FILTER (?x1 != ?x2 && ?y1 != ?y2)
+}
