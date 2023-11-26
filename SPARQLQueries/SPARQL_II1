@@ -1,7 +1,0 @@
-# Is [Author] an author in the ontology?
-
-ASK {
-    ?author rdf:type BASE:Author .
-    ?author BASE:hasName ?name .
-    FILTER regex(?name, "{author_name}", "i") .
-}

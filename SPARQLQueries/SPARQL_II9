@@ -1,9 +1,0 @@
-# Which emergent behaviors have the feature [EmergenceFeature]?
-
-SELECT DISTINCT ?behavior 
-WHERE {
-   ?behavior rdf:type BASE:EmergentBehavior .
-    ?prop rdfs:subPropertyOf {subPropertyOf DataProperty:EmergentFeature} .
-    ?behavior ?prop ?value .
-    FILTER(?value = true) .
-}
