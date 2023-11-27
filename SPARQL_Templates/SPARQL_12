@@ -1,6 +1,6 @@
 % Do $<$CE1$>$ have $<$QM$>$ using $<$DP$>$?
 
-ASK {
+ASK WHERE {
   ?x1 rdf:type (*$\langle CE1 \rangle$*) .
   ?x2 rdf:type (*$\langle CE1 \rangle$*) .
   ?x1 (*$\langle DP \rangle$*) ?y1 .
