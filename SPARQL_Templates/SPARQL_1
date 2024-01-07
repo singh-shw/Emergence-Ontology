@@ -5,26 +5,11 @@ SELECT *
             ?x  (*$\langle PE \rangle$*) ?y .
         }
 
-LATEX:
-
-Example - \textit{Which authors define weak emergence?} &  
-  \begin{lstlisting}[basicstyle=\ttfamily\bfseries\scriptsize, escapeinside={(*}{*)},, backgroundcolor=\color{white!10}]
+Example - Which authors define weak emergence?
 SELECT *
-  WHERE {
-    ?x rdf:type (*$\langle CE1 \rangle$*) .
-    ?y rdf:type (*$\langle CE2 \rangle$*) .
-    ?x (*$\langle PE \rangle$*) ?y .
-    }
-\end{lstlisting}
- \\
- \hline
- 2 & Which $<$CE1$>$ $<$PE$>$ $<$CE2$>$ ?   \\
-  & Example - \textit{How many emergent behavior types have novelty emergent feature?} &  
-  \begin{lstlisting}[basicstyle=\ttfamily\bfseries\scriptsize, escapeinside={(*}{*)},, backgroundcolor=\color{white!10}]
-SELECT (COUNT(DISTINCT ?x) AS ?count)
-    WHERE {
-      ?x rdf:type (*$\langle CE \rangle$*) .
-      ?x (*$\langle DP \rangle$*) ?val .
-      FILTER(?val = true) .
-    }
+        WHERE {
+            ?x rdf:type BASE:Author .
+            ?y rdf:type BASE:WeakEmergence .
+            ?x  BASE:defines ?y .
+        }
 \end{lstlisting}
