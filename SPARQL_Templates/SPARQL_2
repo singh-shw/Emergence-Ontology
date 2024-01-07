@@ -4,3 +4,12 @@ WHERE {
   ?x (*$\langle DP \rangle$*) ?val .
   FILTER(?val = true)
 }
+
+EXAMPLE: How many emergent behavior types have novelty emergent feature?
+
+SELECT (COUNT(DISTINCT ?x) AS ?count)
+WHERE {
+  ?x rdf:type BASE:EmergentBehavior .
+  ?x BASE:novelty ?val .
+  FILTER(?val = true)
+}
