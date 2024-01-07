@@ -1,7 +1,15 @@
 SELECT ?type
         WHERE {
             ?x rdf:type ?type .
-            ?type rdfs:subClassOf (*$\langle CE \rangle$*) .
+            ?type rdfs:subClassOf* (*$\langle CE \rangle$*) .
             FILTER(?x = (*$\langle I \rangle$*)) .
             FILTER(?type != (*$\langle CE \rangle$*))
+        }
+Example - What type of emergent behavior is flocking?
+SELECT ?type
+        WHERE {
+            ?x rdf:type ?type .
+            ?type rdfs:subClassOf* BASE:EmergentBehavior .
+            FILTER(?x = BASE:flocking ) .
+            FILTER(?type != BASE:EmergentBehavior)
         }
