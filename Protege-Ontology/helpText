@@ -1,3 +1,7 @@
+Following Ontologies shows the structure of the MetaOntology:
 EmergenceTheories.owl - Combination of theories
 MetaOntology.owl - Consist of main high level classes and properties
 Nuvio.owl - Foundational ontology
+
+Following Ontology stores theories and respective individuals:
+AllTheoriesWithIndividuals.owl
