@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-121#"
+     xml:base="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-121"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontodebug="http://ainf.aau.at/ontodebug#">
+    <owl:Ontology rdf:about="http://ece.neu.edu/ontologies/EmergenceTheories.owl">
+        <owl:imports rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ainf.aau.at/ontodebug#axiom -->
+
+    <owl:AnnotationProperty rdf:about="http://ainf.aau.at/ontodebug#axiom">
+        <rdfs:subPropertyOf rdf:resource="http://ainf.aau.at/ontodebug#testCase"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://ainf.aau.at/ontodebug#testCase -->
+
+    <owl:AnnotationProperty rdf:about="http://ainf.aau.at/ontodebug#testCase"/>
+    
+
+
+    <!-- http://ainf.aau.at/ontodebug#type -->
+
+    <owl:AnnotationProperty rdf:about="http://ainf.aau.at/ontodebug#type">
+        <rdfs:subPropertyOf rdf:resource="http://ainf.aau.at/ontodebug#testCase"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#WOSP -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#WOSP"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#irreducibility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#irreducibility"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#levels -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#levels"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#novelty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#novelty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#predictability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#predictability"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/EmergenceTheories.owl#BedauBehavior -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/EmergenceTheories.owl#BedauBehavior">
+        <rdfs:subClassOf rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#EmergentBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/EmergenceTheories.owl#ChalmersBehavior -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/EmergenceTheories.owl#ChalmersBehavior">
+        <rdfs:subClassOf rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#EmergentBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/EmergenceTheories.owl#FrommBehavior -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/EmergenceTheories.owl#FrommBehavior">
+        <rdfs:subClassOf rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#EmergentBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/EmergenceTheories.owl#MaierBehavior -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/EmergenceTheories.owl#MaierBehavior">
+        <rdfs:subClassOf rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#EmergentBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/EmergenceTheories.owl#NominalEmergence -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/EmergenceTheories.owl#NominalEmergence">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#WOSP"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ece.neu.edu/ontologies/EmergenceTheories.owl#BedauBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/EmergenceTheories.owl#SimpleEmergence -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/EmergenceTheories.owl#SimpleEmergence">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#WOSP"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ece.neu.edu/ontologies/EmergenceTheories.owl#MaierBehavior"/>
+        <owl:incompatibleWith rdf:resource="http://ece.neu.edu/ontologies/EmergenceTheories.owl#NominalEmergence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/EmergenceTheories.owl#SpookyBehavior -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/EmergenceTheories.owl#SpookyBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#irreducibility"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#levels"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#predictability"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ece.neu.edu/ontologies/EmergenceTheories.owl#MaierBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/EmergenceTheories.owl#StrongEmergence -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/EmergenceTheories.owl#StrongEmergence">
+        <owl:equivalentClass rdf:resource="http://ece.neu.edu/ontologies/EmergenceTheories.owl#TypeIV"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#irreducibility"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#levels"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ece.neu.edu/ontologies/EmergenceTheories.owl#ChalmersBehavior"/>
+        <owl:disjointWith rdf:resource="http://ece.neu.edu/ontologies/EmergenceTheories.owl#StrongEmergence_Maier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/EmergenceTheories.owl#StrongEmergence_Maier -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/EmergenceTheories.owl#StrongEmergence_Maier">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#irreducibility"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ece.neu.edu/ontologies/EmergenceTheories.owl#MaierBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/EmergenceTheories.owl#TypeI -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/EmergenceTheories.owl#TypeI">
+        <rdfs:subClassOf rdf:resource="http://ece.neu.edu/ontologies/EmergenceTheories.owl#FrommBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/EmergenceTheories.owl#TypeII -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/EmergenceTheories.owl#TypeII">
+        <rdfs:subClassOf rdf:resource="http://ece.neu.edu/ontologies/EmergenceTheories.owl#FrommBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/EmergenceTheories.owl#TypeIII -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/EmergenceTheories.owl#TypeIII">
+        <rdfs:subClassOf rdf:resource="http://ece.neu.edu/ontologies/EmergenceTheories.owl#FrommBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/EmergenceTheories.owl#TypeIV -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/EmergenceTheories.owl#TypeIV">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#predictability"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ece.neu.edu/ontologies/EmergenceTheories.owl#FrommBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/EmergenceTheories.owl#WeakEmergence -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/EmergenceTheories.owl#WeakEmergence">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#levels"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#novelty"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ece.neu.edu/ontologies/EmergenceTheories.owl#ChalmersBehavior"/>
+        <owl:disjointWith rdf:resource="http://ece.neu.edu/ontologies/EmergenceTheories.owl#WeakEmergence_Maier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/EmergenceTheories.owl#WeakEmergence_Maier -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/EmergenceTheories.owl#WeakEmergence_Maier">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#predictability"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ece.neu.edu/ontologies/EmergenceTheories.owl#MaierBehavior"/>
+    </owl:Class>
+    <rdf:Description>
+        <ontodebug:axiom>NominalEmergence EquivalentTo SimpleEmergence</ontodebug:axiom>
+        <ontodebug:type rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontodebug:type>
+    </rdf:Description>
+    <rdf:Description>
+        <ontodebug:axiom>NominalEmergence EquivalentTo SimpleEmergence</ontodebug:axiom>
+        <ontodebug:type rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontodebug:type>
+    </rdf:Description>
+    <rdf:Description>
+        <ontodebug:axiom>NominalEmergence EquivalentTo SimpleEmergence</ontodebug:axiom>
+        <ontodebug:type rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontodebug:type>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

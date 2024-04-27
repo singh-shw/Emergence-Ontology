@@ -1,0 +1,2238 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#"
+     xml:base="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Nuvio="http://cogradio.org/ont/Nuvio.owl#"
+     xmlns:ontodebug="http://ainf.aau.at/ontodebug#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76">
+        <owl:imports rdf:resource="http://cogradio.org/ont/Nuvio.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ainf.aau.at/ontodebug#axiom -->
+
+    <owl:AnnotationProperty rdf:about="http://ainf.aau.at/ontodebug#axiom">
+        <rdfs:subPropertyOf rdf:resource="http://ainf.aau.at/ontodebug#testCase"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://ainf.aau.at/ontodebug#testCase -->
+
+    <owl:AnnotationProperty rdf:about="http://ainf.aau.at/ontodebug#testCase"/>
+    
+
+
+    <!-- http://ainf.aau.at/ontodebug#type -->
+
+    <owl:AnnotationProperty rdf:about="http://ainf.aau.at/ontodebug#type">
+        <rdfs:subPropertyOf rdf:resource="http://ainf.aau.at/ontodebug#testCase"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#defines -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#defines">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#isDefinedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasDefinitionValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasDefinitionValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#isDefinedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#isDefinedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#isDefinedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#isDefinedIn">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#isPublishedIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Behavior"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#isPublishedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#isPublishedIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#publishes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#publishes">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#writtenBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#writtenBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#writtenBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#WOSP -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#WOSP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasEmergentFeature"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&apos;Whole is Other than Sum of its Parts&apos;</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#coherence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#coherence">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#decentralized -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#decentralized">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#dynamical -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#dynamical">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasCitationCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasCitationCount">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasDataValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasDataValue">
+        <rdfs:domain rdf:resource="http://cogradio.org/ont/Nuvio.owl#Value"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasDefinition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasDefinition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasEmergentFeature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasEmergentFeature">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasNumberOfPapers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasNumberOfPapers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasTitle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#interactions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#interactions">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#irreducibility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#irreducibility">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#levels -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#levels">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#novelty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#novelty">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#observability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#observability">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#predictability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#predictability">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#publishedInYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#publishedInYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#AllisonBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#AllisonBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#novelty"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#predictability"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:comment>The emergent properties are the divergence between intended and realized design. These properties cannot be known a priori.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#I.Allison"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author">
+        <rdfs:subClassOf rdf:resource="http://cogradio.org/ont/Nuvio.owl#Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#publishes"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Bar-YamBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Bar-YamBehavior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:comment>Emergents are properties of the system that cannot
+be inferred from observations of components and
+are the result of system level constraints.
+
+(irreducibility value true)
+ and (levels value true)</rdfs:comment>
+        <rdfs:comment>Generalizes Ashby’s law to develop a relationship between the available behaviors of the system’s subcomponents as they are defined at different scales.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Y.Bar-Yam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#BedauBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#BedauBehavior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:comment>Emergents are properties possessed by macro
+objects that are caused by interwoven non-linear
+relationships between their micro constituents,
+but cannot be posed by them and are only
+derivable by simulation (i.e., apparently
+underivable).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Bedau"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Behavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Behavior">
+        <rdfs:subClassOf rdf:resource="http://cogradio.org/ont/Nuvio.owl#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#BenignEmergence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#BenignEmergence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#SeagerBehavior"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#W.Seager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#ChalmersBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#ChalmersBehavior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Chalmers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#CoherentEmergentBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#CoherentEmergentBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#coherence"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#CrutchfieldBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#CrutchfieldBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#dynamical"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#interactions"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:comment>Emergence is the dynamic interaction of
+subsystems and components that create new
+patterns that produce new system capabilities/
+functions.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Crutchfield"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#DefinitionValue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#DefinitionValue">
+        <rdfs:subClassOf rdf:resource="http://cogradio.org/ont/Nuvio.owl#InformationContent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#DynamicalEmergentBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#DynamicalEmergentBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#dynamical"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#DysonBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#DysonBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#WOSP"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#novelty"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#predictability"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:comment>Emergent behavior is that which cannot be predicted through analysis at any level simpler than that of the system as a whole. Explanations of emergence, like simplifications of complexity, are inherently illusory and can only be achieved by sleight of hand. This does not mean that emergence is not real. Emergent behavior, by definition, is what&apos;s left after everything else has been explained.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#G.Dyson"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Behavior"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#isDefinedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasEmergentFeature"/>
+                        <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#FisherBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#FisherBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#interactions"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#irreducibility"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#novelty"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:comment>An emergent property is any characteristic of a system that cannot be localized to a single independently acting constituent or to a small constant number of constituents. Emergent properties arise from the cumulative effects of the local actions and neighbor interactions of many autonomous entities</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#D._Fisher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#FrommBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#FrommBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#WOSP"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#interactions"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#levels"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:comment>A property of a system is emergent, if it is not a property of any fundamental element, and emergence is the appearance of emergent properties and structures on a higher level of organization or complexity</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Jochen_Fromm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#GoldsteinBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#GoldsteinBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#coherence"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#levels"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#novelty"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:comment>The arising of novel and coherent structures, patterns and properties during the process of self-organization in complex systems</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#J._Goldstein"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#HollandBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#HollandBehavior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:comment>In this paper Fromm’s and Yam’s ideas on feedback and scale are modified by considering some of the ideas of pattern formation and complexity detection developed by Crutchfiled and Shalizi</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type0 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type0">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#HollandBehavior"/>
+        <rdfs:comment>Non-emergence
+- Eg. Ablowitx’s pile of bricks is representative of Type 0 – the potential is there for emergence but connectivity between entities is not existent
+– It seems trivial but necessary in order to establish the fundamental precept that “collective behaviors are not contained in the behaviors of the parts”</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type1">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeI"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#HollandBehavior"/>
+        <rdfs:comment>– Nominal Emergence (same as that of Fromm)
+– Characterized by feedback that is only local-to-global, or rather a feed-forward processes, i.e. no global-to-local feedback mechanism
+– Each component always has same behavior, i.e. has a single state and each components’ state is independent of other component states, global state and environment
+– System is completely deterministic and measurable
+– Causality is bottom-up</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type1a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type1a">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type1"/>
+        <rdfs:comment>Intentional Emergence
+- Typical of “ordinary machines”
+- Constituent components function independently
+- No top-down feedback (global to local)
+- Results in brittle systems (not adaptable)
+- Locally dependent (e.g. one gear turns the next)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type1b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type1b">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type1"/>
+        <rdfs:comment>Unintentional Emergence
+- Interaction of many loosely coupled unorganized but equal components
+- Typical of particle systems describing a large number of “agents” as the sum of an average property
+- Constituent components are “particles” that in aggregate are described by properties inapplicable to the constituents
+- No top-down feedback, but peer-to-peer interaction is present (locally)
+- Scale preserving interaction results in waves, chain reactions, avalanches etc</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#HollandBehavior"/>
+        <rdfs:comment>Moderated Emergence
+– Feedback from system to the components (top-down feedback from global to local level)
+– Associated to multi-agent systems where interactions of many agents react to global influences yet at local level give rise to patterns observable at global level
+– Further classified according to the net effect of the feedback</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type2a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type2a">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type2"/>
+        <rdfs:comment>Moderated stable emergent
+- Net negative feedback – local effects global which tends to regulate local</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type2b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type2b">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type2"/>
+        <rdfs:comment>Moderated unstable emergent
+- Net positive feedback and does not regulate local interactions
+- Results in rapid rise of unstable patterns, grouping and catastrophic events</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#HollandBehavior"/>
+        <rdfs:comment>Multiple Emergence 
+- Combines Type2a and Type2b
+- Typical of “reaction-diffusion” systems
+- Adaptive, turbulent, chaotic, exhibiting both stable and unstable characteristics
+- Short-term positive feedback checked by long-term negative feedback.
+- Results in biological-like pattern formation, e.g. game of life</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland_Type4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#HollandBehavior"/>
+        <rdfs:comment>Evolutionary Emergence
+– Introduces a fundamental difference in underlying assumptions of entities comprising the system
+– Typical of biological entities
+– Adaptive at both global and local levels
+– Feedback can be of any type and multiple in sources
+– Results in highly complex adaptive systems
+– Eg. genetic algorithm</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#HsuBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#HsuBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#decentralized"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#interactions"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:comment>Emergent behaviors are characteristics that arise from the cumulative actions and interactions of the constituents of a system-of-systems. Emergent behavior is inversely proportional to the degree of bondage between systems (the more tightly the component systems are coupled the less likely that the global emergent behavior will prevail; emergent behaviors do not arise in closed hierarchically structured systems), is non-linear and self-organized</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#J.C.Hsu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#IrreducibleEmergentBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#IrreducibleEmergentBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#irreducibility"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#JohnsonBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#JohnsonBehavior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#C.W.Johnson"/>
+        <rdfs:isDefinedBy>Emergent properties can be thought of as unexpected behaviors that stem from interaction between the components of an application and their environment. There is considerable disagreement about the nature of emergent properties: any unexpected properties exhibited by a complex system; or an application exhibits behaviors that cannot be identified through functional decomposition</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#KaislerBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#KaislerBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#irreducibility"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#novelty"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:comment>Emergent properties are characteristic of complex systems. Sysmtes of sufficient complexity with typically have properties that can’t be explained by breaking the system down into its elements (emergent properties)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#S.Kaisler"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#LewesBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#LewesBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#irreducibility"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#novelty"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:comment>The emergent is unlike its components insofar as these are incommensurable, and it cannot be reduced to their sum or their difference</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#G.H.Lewes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#MaierBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#MaierBehavior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:comment>Emergence is the production of properties
+possessed by an assemblage of things that are not
+possessed by its members; that vary in degree of
+derivability in models; and is the result of
+interactions between components and time scales.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Maier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#MarshBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#MarshBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#interactions"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#novelty"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:comment>The emergent properties of the collective whole do not in any transparent way derive from the underlying rules governing the interaction of the system’s components</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#G.Marsh"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#MogulBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#MogulBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#dynamical"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#predictability"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#J.C.Mogul"/>
+        <rdfs:isDefinedBy>Complex systems often behave in unexpected ways that are not easily predictable from the behaviors of components – emergent behavior. List of properties common to some or all instances of emergent misbehavior: Inherently hard-to-predict behavior,  Sudden changes in behavior, Amplification of seemingly minor behaviors</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#NominalEmergence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#NominalEmergence">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#WOSP"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#BedauBehavior"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#SimpleBehavior"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Bedau"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#NovelEmergentBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#NovelEmergentBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#novelty"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#OTooleBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#OTooleBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#interactions"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#levels"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#novelty"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:comment>Emergence can only occur in systems composed of autonomous parts, agents, who interact in dynamic, non-deterministic ways. These systems are composed such that it is possible to talk about them at two levels; the level of the individual agents (micro) and the level of the global system (macro). Emergence occurs when interactions at the micro level result in properties or behavior at the macro level becoming observable, and these behaviors are novel with respect to the individual agents.”</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#OToole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper">
+        <rdfs:subClassOf rdf:resource="http://cogradio.org/ont/Nuvio.owl#InformationContent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#writtenBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#hasTitle"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#RadicalEmergence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#RadicalEmergence">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#irreducibility"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#levels"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#SeagerBehavior"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#W.Seager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#RouffBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#RouffBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#dynamical"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#interactions"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#levels"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#C._Rouff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#SeagerBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#SeagerBehavior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:comment>Two kind of emergence: benign and radical. Distinguishes between supposedly ‘benign’ or acceptable emergence - if we can find a descriptive or explanatory scheme which provides a useful kind of shorthand notation for describing the behavior of a system, for example the pressure and temperature of a gas - from a ‘radical’ emergence. 
+
+Radical emergence corresponds roughly to the strong emergence of Bedau and Chalmers</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#W.Seager"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#SimpleBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#SimpleBehavior">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#WOSP"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#MaierBehavior"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Maier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#SpookyBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#SpookyBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#irreducibility"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#levels"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#predictability"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#MaierBehavior"/>
+        <rdfs:comment>Spooky emergence refers to all system-level behavior that is flatly inexplicable and unpredictable using current scientific knowledge, such as
+conscious thought.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Maier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#StrongEmergence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#StrongEmergence">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#irreducibility"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#levels"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#BedauBehavior"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#ChalmersBehavior"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#StrongEmergence_Maier"/>
+        <rdfs:comment>We can say that a high-level phenomenon is strongly emergent with respect to a low-level domain when the high-level phenomenon arises from the low-level domain, but truths concerning that phenomenon are not deducible even in principle from truths in the low-level domain</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Chalmers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#StrongEmergence_Maier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#StrongEmergence_Maier">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#irreducibility"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#MaierBehavior"/>
+        <rdfs:comment>Strong emergence is now a behavior whose general causal chain can be traced down to the component level,
+but simulations fail to consistently replicate.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Maier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#SzaboBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#SzaboBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#interactions"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#novelty"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#predictability"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <rdfs:comment>Complex systems often exhibit properties that are not easily predictable by analyzing the behavior of their individual, interacting components. These properties, called emergent properties, are increasingly becoming important as software systems grow in complexity, coupling and geographic distribution</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#C.Szabo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Type0 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Type0">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#interactions"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Bar-YamBehavior"/>
+        <rdfs:comment>no interactions between particles, behavior is seen strictly on the particle level</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Y.Bar-Yam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Type1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Type1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#levels"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#novelty"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Bar-YamBehavior"/>
+        <rdfs:comment>behaviors are only unexpected given the properties and principles of low-level domain</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Y.Bar-Yam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Type2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Type2">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#irreducibility"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#levels"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Bar-YamBehavior"/>
+        <rdfs:comment>behaviors cannot be found in properties of system’s lower level domains or interactions of lower level domain</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Y.Bar-Yam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Type3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Type3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Bar-YamBehavior"/>
+        <rdfs:comment>classifies the EB of systems that arise out of the interaction with the environment</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Y.Bar-Yam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#FrommBehavior"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Jochen_Fromm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeII -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeII">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#interactions"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#levels"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#FrommBehavior"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Jochen_Fromm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeIII -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeIII">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#FrommBehavior"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Jochen_Fromm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeIIIa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeIIIa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeIII"/>
+        <rdfs:comment>Multiple Feedback</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Jochen_Fromm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeIIIb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeIIIb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeIII"/>
+        <rdfs:comment>Adaptive Feedback</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Jochen_Fromm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeIIa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeIIa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeII"/>
+        <rdfs:comment>Negative Feedback</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Jochen_Fromm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeIIb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeIIb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeII"/>
+        <rdfs:comment>Positive Feedback</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Jochen_Fromm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeIV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeIV">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#predictability"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#FrommBehavior"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Jochen_Fromm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeIa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeIa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeI"/>
+        <rdfs:comment>Intentional Emergence</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Jochen_Fromm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeIb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeIb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#TypeI"/>
+        <rdfs:comment>Unintentional Emergence</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Jochen_Fromm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#UnpredictableEmergentBehavior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#UnpredictableEmergentBehavior">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#predictability"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#WeakEmergence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#WeakEmergence">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#levels"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#novelty"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#BedauBehavior"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#ChalmersBehavior"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#WeakEmergence_Maier"/>
+        <rdfs:comment>We can say that a high-level phenomenon is weakly emergent with respect to a low-level domain when the high-level phenomenon arises from the low-level domain, but truths concerning that phenomenon are unexpected given the principles governing the low-level domain.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Chalmers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#WeakEmergence_Maier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#WeakEmergence_Maier">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#predictability"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#MaierBehavior"/>
+        <rdfs:comment>The weak category was reserved for behavior that is consistently predictable using simulations of equal complexity to the actual
+system, but not with more abstract models. Most systems studied using agent-based models would fall into this
+category.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Maier"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Bedau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Bedau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark Bedau</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#C.Szabo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#C.Szabo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Claudia Szabo</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#C.W.Johnson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#C.W.Johnson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christopher W. Johnson</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#C._Rouff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#C._Rouff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName>Christopher Rouff</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Chalmers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Chalmers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">David J. Chalmers</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Crutchfield -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Crutchfield">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James P. Crutchfield</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#D._Fisher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#D._Fisher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName>David A. Fisher</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#G.Dyson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#G.Dyson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">George B. Dyson</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#G.H.Lewes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#G.H.Lewes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName>George Henry Lewes</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#G.Marsh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#G.Marsh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gerald E. Marsh</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Gore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Gore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ross Gore</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thomas O. Holland</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#I.Allison -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#I.Allison">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <defines rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Allison"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ian Allison</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#J.C.Hsu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#J.C.Hsu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John C. Hsu</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#J.C.Mogul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#J.C.Mogul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jeffrey C. Mogul</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#J._Goldstein -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#J._Goldstein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName>Jeffery Goldstein</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Jochen_Fromm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Jochen_Fromm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName>Jochen Fromm</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Maier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Maier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mark W. Maier</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#OToole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#OToole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eamonn O&apos;Toole</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#S.Kaisler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#S.Kaisler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stephen H. Kaisler</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#W.Seager -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#W.Seager">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">William Seager</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Y.Bar-Yam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Y.Bar-Yam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Author"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yaneer Bar-Yam</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Allison -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Allison">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#I.Allison"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Allison"/>
+        <novelty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</novelty>
+        <predictability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</predictability>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Bar-Yam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Bar-Yam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Y.Bar-Yam"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Bar-Yam"/>
+        <irreducibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</irreducibility>
+        <levels rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</levels>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_C.Szabo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_C.Szabo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#C.Szabo"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_C.Szabo"/>
+        <interactions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</interactions>
+        <novelty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</novelty>
+        <predictability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</predictability>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_C.W.Johnson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_C.W.Johnson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#C.W.Johnson"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_C.W.Johnson"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_C._Rouff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_C._Rouff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#C._Rouff"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_C._Rouff"/>
+        <dynamical rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</dynamical>
+        <interactions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</interactions>
+        <levels rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</levels>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Chalmers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Chalmers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Chalmers"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Chalmers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Crutchfield -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Crutchfield">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Crutchfield"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Crutchfield"/>
+        <dynamical rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</dynamical>
+        <interactions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</interactions>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_D._Fisher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_D._Fisher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#D._Fisher"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_D._Fisher"/>
+        <interactions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</interactions>
+        <irreducibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</irreducibility>
+        <novelty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</novelty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_G.H.Lewes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_G.H.Lewes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#G.H.Lewes"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_G.H.Lewes"/>
+        <irreducibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</irreducibility>
+        <novelty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</novelty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_G.Marsh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_G.Marsh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#G.Marsh"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_G.Marsh"/>
+        <interactions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</interactions>
+        <novelty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</novelty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Holland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Holland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Holland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_J.C.Mogul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_J.C.Mogul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#J.C.Mogul"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_J.C.Mogul"/>
+        <dynamical rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</dynamical>
+        <predictability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</predictability>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_J._Goldstein -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_J._Goldstein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#J._Goldstein"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_J._Goldstein"/>
+        <coherence rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</coherence>
+        <levels rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</levels>
+        <novelty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</novelty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Jochen_Fromm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Jochen_Fromm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Jochen_Fromm"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Jochen_Fromm"/>
+        <WOSP rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</WOSP>
+        <interactions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</interactions>
+        <levels rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</levels>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Maier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Maier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Maier"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Maier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_OToole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_OToole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#OToole"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_OToole"/>
+        <interactions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</interactions>
+        <levels rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</levels>
+        <novelty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</novelty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_S.Kaisler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_S.Kaisler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#S.Kaisler"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_S.Kaisler"/>
+        <irreducibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</irreducibility>
+        <novelty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</novelty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Seager -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Seager">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#W.Seager"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Seager"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_bedau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_bedau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Bedau"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_bedau"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_dyson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_dyson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#G.Dyson"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_G.Dyson"/>
+        <WOSP rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</WOSP>
+        <novelty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</novelty>
+        <predictability rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</predictability>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_hsu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_hsu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#J.C.Hsu"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_J.C.Hsu"/>
+        <decentralized rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</decentralized>
+        <interactions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</interactions>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_nominal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_nominal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#G.H.Lewes"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_G.H.Lewes"/>
+        <WOSP rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</WOSP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_strong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_strong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Chalmers"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Chalmers"/>
+        <irreducibility rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</irreducibility>
+        <levels rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</levels>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_weak -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_weak">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <isDefinedBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Chalmers"/>
+        <isDefinedIn rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Chalmers"/>
+        <levels rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</levels>
+        <novelty rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</novelty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#definitionVal_Allison -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#definitionVal_Allison">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#DefinitionValue"/>
+        <defines rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Allison"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</hasCitationCount>
+        <hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The emergent properties are the divergence between intended and realized design. These properties cannot be known a priori.</hasDefinition>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The emergent properties are the divergence between intended and realized design. These properties cannot be known a priori.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#definitionVal_Crutchfield -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#definitionVal_Crutchfield">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#DefinitionValue"/>
+        <defines rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Crutchfield"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">375</hasCitationCount>
+        <hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emergence is the dynamic interaction of
+subsystems and components that create new
+patterns that produce new system capabilities/
+functions.</hasDefinition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#definitionVal_Fromm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#definitionVal_Fromm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#DefinitionValue"/>
+        <defines rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_Jochen_Fromm"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">171</hasCitationCount>
+        <hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A property of a system is emergent, if it is not a property of any fundamental element, and emergence is the appearance of emergent properties and structures on a higher level of organization or complexity</hasDefinition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#definitionVal_Goldstein -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#definitionVal_Goldstein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#DefinitionValue"/>
+        <defines rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#behavior_J._Goldstein"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1919</hasCitationCount>
+        <hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The arising of novel and coherent structures, patterns and properties during the process of self-organization in complex systems</hasDefinition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#flocking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#flocking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#EmergentBehavior"/>
+        <interactions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</interactions>
+        <levels rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</levels>
+        <rdfs:comment>Flocking is the behavior exhibited when a group of birds, called a flock, are foraging or in flight.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Allison -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Allison">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <hasDefinitionValue rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#definitionVal_Allison"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#I.Allison"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</hasCitationCount>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Software process improvement as emergent change: A structurational analysis</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2007</publishedInYear>
+        <rdfs:comment>Allison, Ian, and Yasmin Merali. &quot;Software process improvement as emergent change: A structurational analysis.&quot; Information and software technology 49.6 (2007): 668-681.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Bar-Yam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Bar-Yam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Y.Bar-Yam"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">233</hasCitationCount>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multiscale variety in complex systems</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2004</publishedInYear>
+        <rdfs:comment>Bar‐Yam, Yaneer. &quot;Multiscale variety in complex systems.&quot; Complexity 9.4 (2004): 37-45.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_C.Szabo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_C.Szabo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#C.Szabo"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">31</hasCitationCount>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formalization of weak emergence in multiagent systems</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</publishedInYear>
+        <rdfs:comment>Szabo, Claudia, and Yong Meng Teo. &quot;Formalization of weak emergence in multiagent systems.&quot; ACM Transactions on Modeling and Computer Simulation (TOMACS) 26.1 (2015): 1-25.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_C.W.Johnson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_C.W.Johnson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#C.W.Johnson"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">285</hasCitationCount>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What are emergent properties and how do they affect the engineering of complex systems?</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2006</publishedInYear>
+        <rdfs:comment>Johnson, Christopher W. &quot;What are emergent properties and how do they affect the engineering of complex systems?.&quot; Reliability Engineering &amp; System Safety 91.12 (2006): 1475-1481.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_C._Rouff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_C._Rouff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#C._Rouff"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">54</hasCitationCount>
+        <hasTitle>Properties of a formal method for prediction of emergent behaviors in swarm-based systems</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2004</publishedInYear>
+        <rdfs:comment>Rouff, Christopher, et al. &quot;Properties of a formal method for prediction of emergent behaviors in swarm-based systems.&quot; Proceedings of the Second International Conference on Software Engineering and Formal Methods, 2004. SEFM 2004.. IEEE, 2004</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Chalmers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Chalmers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Chalmers"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">812</hasCitationCount>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strong and weak emergence</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2006</publishedInYear>
+        <rdfs:comment>Chalmers, David J. &quot;Strong and weak emergence.&quot; The re-emergence of emergence 675 (2006): 244-256.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Crutchfield -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Crutchfield">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <hasDefinitionValue rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#definitionVal_Crutchfield"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Crutchfield"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">375</hasCitationCount>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is anything ever new? Considering emergence</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1994</publishedInYear>
+        <rdfs:comment>Crutchfield, James P. &quot;Is anything ever new? Considering emergence.&quot; SANTA FE INSTITUTE STUDIES IN THE SCIENCES OF COMPLEXITY-PROCEEDINGS VOLUME-. Vol. 19. ADDISON-WESLEY PUBLISHING CO, 1994.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_D._Fisher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_D._Fisher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#D._Fisher"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">160</hasCitationCount>
+        <hasTitle>An emergent perspective on interoperation in systems of systems</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2006</publishedInYear>
+        <rdfs:comment>Fisher, David A. &quot;An emergent perspective on interoperation in systems of systems.&quot; Software Engineering Institute, Carnegie Mellon), March (2006).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_G.Dyson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_G.Dyson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#G.Dyson"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">565</hasCitationCount>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Darwin among the machines: The evolution of global intelligence</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1997</publishedInYear>
+        <rdfs:comment>Dyson, George B. Darwin among the machines: The evolution of global intelligence. Basic Books, 2012.
+Original paper published in 1997</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_G.H.Lewes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_G.H.Lewes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#G.H.Lewes"/>
+        <hasTitle>Problems of life and mind</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1877</publishedInYear>
+        <rdfs:comment>book{lewes1877problems,
+  title={Problems of life and mind},
+  author={Lewes, George Henry},
+  year={1877},
+  publisher={Tr{\&quot;u}bner \&amp; Company}
+}</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_G.Marsh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_G.Marsh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#G.Marsh"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</hasCitationCount>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The demystification of emergent behavior</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2009</publishedInYear>
+        <rdfs:comment>Marsh, Gerald E. &quot;The demystification of emergent behavior.&quot; arXiv preprint arXiv:0907.1117 (2009).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Gore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Gore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Gore"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">28</hasCitationCount>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An exploration-based taxonomy for emergent behavior analysis in simulations</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2007</publishedInYear>
+        <rdfs:comment>Gore, Ross, and Paul F. Reynolds. &quot;An exploration-based taxonomy for emergent behavior analysis in simulations.&quot; 2007 Winter Simulation Conference. IEEE, 2007.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Holland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Holland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Holland"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">57</hasCitationCount>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taxonomy for the modeling and simulation of emergent behavior systems</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2007</publishedInYear>
+        <rdfs:comment>Holland, O. Thomas. &quot;Taxonomy for the modeling and simulation of emergent behavior systems.&quot; Proceedings of the 2007 spring simulation multiconference-Volume 2. 2007.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_J.C.Hsu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_J.C.Hsu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#J.C.Hsu"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</hasCitationCount>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modeling Emergent Behavior for Systems‐of‐Systems</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2007</publishedInYear>
+        <rdfs:comment>Hsu, John C., and Marion Butterfield. &quot;Modeling Emergent Behavior for Systems‐of‐Systems.&quot; INCOSE International Symposium. Vol. 17. No. 1. 2007.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_J.C.Mogul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_J.C.Mogul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#J.C.Mogul"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">261</hasCitationCount>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emergent (mis) behavior vs. complex software systems</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2006</publishedInYear>
+        <rdfs:comment>Mogul, Jeffrey C. &quot;Emergent (mis) behavior vs. complex software systems.&quot; ACM SIGOPS Operating Systems Review 40.4 (2006): 293-304.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_J._Goldstein -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_J._Goldstein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <hasDefinitionValue rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#definitionVal_Goldstein"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#J._Goldstein"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1919</hasCitationCount>
+        <hasTitle>Emergence as a construct: History and issues</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1999</publishedInYear>
+        <rdfs:comment>Goldstein, Jeffrey. &quot;Emergence as a construct: History and issues.&quot; Emergence 1.1 (1999): 49-72.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Jochen_Fromm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Jochen_Fromm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <hasDefinitionValue rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#definitionVal_Fromm"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Jochen_Fromm"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">171</hasCitationCount>
+        <hasTitle>Types and forms of emergence</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2005</publishedInYear>
+        <rdfs:comment>Fromm, Jochen. &quot;Types and forms of emergence.&quot; arXiv preprint nlin/0506028 (2005).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Maier -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Maier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Maier"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">64</hasCitationCount>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The role of modeling and simulation in system of systems development</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2014</publishedInYear>
+        <rdfs:comment>Maier, Mark W. &quot;The role of modeling and simulation in system of systems development.&quot; Modeling and simulation support for system of systems engineering applications (2014): 11-41.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_OToole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_OToole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#OToole"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">26</hasCitationCount>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Towards Decentralised Detection of Emergence in Complex Adaptive Systems</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2014</publishedInYear>
+        <rdfs:comment>O&apos;Toole, Eamonn, Vivek Nallur, and Siobhan Clarke. &quot;Towards decentralised detection of emergence in complex adaptive systems.&quot; 2014 IEEE Eighth International Conference on Self-Adaptive and Self-Organizing Systems. IEEE, 2014.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_S.Kaisler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_S.Kaisler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#S.Kaisler"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">56</hasCitationCount>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Complex adaptive systems: emergence and self-organization</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2009</publishedInYear>
+        <rdfs:comment>Kaisler, Stephen H., and Gregory Madey. &quot;Complex adaptive systems: emergence and self-organization.&quot; Tutorial Presented at HICSS-42 Big Island 5 (2009).</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Seager -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_Seager">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#W.Seager"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</hasCitationCount>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emergence, epiphenomenalism and consciousness</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2006</publishedInYear>
+        <rdfs:comment>Seager, William. &quot;Emergence, epiphenomenalism and consciousness.&quot; Journal of Consciousness Studies 13.1-2 (2006): 21-38.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_bedau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#paper_bedau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Paper"/>
+        <writtenBy rdf:resource="http://www.semanticweb.org/shwetasingh/ontologies/2023/7/untitled-ontology-76#Bedau"/>
+        <hasCitationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#int">493</hasCitationCount>
+        <hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Downward causation and the autonomy of weak emergence</hasTitle>
+        <publishedInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2002</publishedInYear>
+        <rdfs:comment>Bedau, Mark. &quot;Downward causation and the autonomy of weak emergence.&quot; Principia: an international journal of epistemology 6.1 (2002): 5-50.</rdfs:comment>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <ontodebug:axiom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NominalEmergence DisjointWith SimpleBehavior</ontodebug:axiom>
+        <ontodebug:type rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ontodebug:type>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

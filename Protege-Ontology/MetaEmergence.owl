@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117#"
+     xml:base="http://www.semanticweb.org/shwetasingh/ontologies/2024/2/untitled-ontology-117"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl">
+        <owl:imports rdf:resource="http://cogradio.org/ont/Nuvio.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#defines -->
+
+    <owl:ObjectProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#defines">
+        <owl:inverseOf rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#isDefinedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#isDefinedBy -->
+
+    <owl:ObjectProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#isDefinedBy"/>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#isDefinedIn -->
+
+    <owl:ObjectProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#isDefinedIn">
+        <owl:equivalentProperty rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#isPublishedIn"/>
+        <rdfs:domain rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#Behavior"/>
+        <rdfs:range rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#isPublishedIn -->
+
+    <owl:ObjectProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#isPublishedIn"/>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#publishes -->
+
+    <owl:ObjectProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#publishes">
+        <owl:inverseOf rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#writtenBy"/>
+        <rdfs:domain rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#Author"/>
+        <rdfs:range rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#writtenBy -->
+
+    <owl:ObjectProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#writtenBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#WOSP -->
+
+    <owl:DatatypeProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#WOSP">
+        <rdfs:subPropertyOf rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#coherence -->
+
+    <owl:DatatypeProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#coherence">
+        <rdfs:subPropertyOf rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#decentralized -->
+
+    <owl:DatatypeProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#decentralized">
+        <rdfs:subPropertyOf rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#dynamical -->
+
+    <owl:DatatypeProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#dynamical">
+        <rdfs:subPropertyOf rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#hasCitationCount -->
+
+    <owl:DatatypeProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#hasCitationCount"/>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#hasEmergentFeature -->
+
+    <owl:DatatypeProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#hasEmergentFeature">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#interactions -->
+
+    <owl:DatatypeProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#interactions">
+        <rdfs:subPropertyOf rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#irreducibility -->
+
+    <owl:DatatypeProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#irreducibility">
+        <rdfs:subPropertyOf rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#levels -->
+
+    <owl:DatatypeProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#levels">
+        <rdfs:subPropertyOf rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#novelty -->
+
+    <owl:DatatypeProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#novelty">
+        <rdfs:subPropertyOf rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#observability -->
+
+    <owl:DatatypeProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#observability">
+        <rdfs:subPropertyOf rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#predictability -->
+
+    <owl:DatatypeProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#predictability">
+        <rdfs:subPropertyOf rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#hasEmergentFeature"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#publishedInYear -->
+
+    <owl:DatatypeProperty rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#publishedInYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#Author -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#Author">
+        <rdfs:subClassOf rdf:resource="http://cogradio.org/ont/Nuvio.owl#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#Behavior -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#Behavior">
+        <rdfs:subClassOf rdf:resource="http://cogradio.org/ont/Nuvio.owl#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#EmergentBehavior -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#EmergentBehavior">
+        <rdfs:subClassOf rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#Behavior"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#isDefinedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#Author"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ece.neu.edu/ontologies/MetaEmergence.owl#hasEmergentFeature"/>
+                        <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ece.neu.edu/ontologies/MetaEmergence.owl#Paper -->
+
+    <owl:Class rdf:about="http://ece.neu.edu/ontologies/MetaEmergence.owl#Paper">
+        <rdfs:subClassOf rdf:resource="http://cogradio.org/ont/Nuvio.owl#InformationContent"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
